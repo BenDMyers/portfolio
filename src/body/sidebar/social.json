@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Email",
+        "label": "Email me.",
+        "icon": "mail",
+        "iconColor": "#f31455",
+        "text": "ben@benmyers.dev",
+        "url": "mailto:ben@benmyers.dev"
+    },
+    {
+        "name": "GitHub",
+        "label": "See what I'm working on.",
+        "icon": "github",
+        "iconColor": "#8334ff",
+        "text": "/BenDMyers",
+        "url": "https://github.com/bendmyers"
+    },
+    {
+        "name": "LinkedIn",
+        "label": "Connect with me.",
+        "icon": "linkedin",
+        "iconColor": "#442cfe",
+        "text": "/BenDMyers",
+        "url": "https://www.linkedin.com/in/bendmyers/"
+    }
+]
