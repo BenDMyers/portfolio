@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Icon, Segment} from 'semantic-ui-react';
 
 const SocialItem = (props) => {
     let {name, label, icon, iconColor, text, url} = props;
     return (
-        <Segment key={name}>
+        <Segment>
             <p className="social-header">{props.label}</p>
             <p className="social-link-content">
                 <Icon aria-hidden="true" name={icon} style={{color: iconColor}} />

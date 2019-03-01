@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Web Development",
+        "icon": "code",
+        "iconColor": "#f31455",
+        "text": "Web Development with ReactJS"
+    },
+    {
+        "name": "Accessibility",
+        "icon": "wheelchair",
+        "iconColor": "#8334ff",
+        "text": "Accessibility and Disability Advocacy"
+    },
+    {
+        "name": "Kafka",
+        "icon": "database",
+        "iconColor": "#442cfe",
+        "text": "Kafka (I'm learning it now!)"
+    }
+]

@@ -32,7 +32,17 @@ body {
     font-size: 125%;
 }
 
-
 .social-link-content a:hover {
     text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+
+.main-content-section {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.topic-cell {
+    text-align: center;
 }
