@@ -6,7 +6,7 @@ const SocialItem = (props) => {
     return (
         <Segment key={name}>
             <p className="social-header">{props.label}</p>
-            <p>
+            <p className="social-link-content">
                 <Icon aria-hidden="true" name={icon} style={{color: iconColor}} />
                 <a href={url}>
                     <span className="screenreader">{name} </span>
