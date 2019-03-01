@@ -12,9 +12,10 @@
         "text": "Accessibility and Disability Advocacy"
     },
     {
-        "name": "Kafka",
-        "icon": "database",
+        "name": "Apache Kafka",
+        "icon": "comment alternate",
+        "cornerIcon": "server",
         "iconColor": "#442cfe",
-        "text": "Kafka (I'm learning it now!)"
+        "text": "Apache Kafka (I'm learning it now!)"
     }
 ]

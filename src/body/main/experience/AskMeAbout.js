@@ -2,18 +2,10 @@ import React from 'react';
 import {Grid, Header, Icon} from 'semantic-ui-react';
 
 import topics from './askMeAbout.json';
+import AskMeAboutTopic from './AskMeAboutTopic';
 
 const AskMeAbout = () => {
-    const topicCells = topics.map(topic => {
-        return (
-            <Grid.Column width={5} className="topic-cell" key={topic.name}>
-                <p aria-hidden="true">
-                    <Icon style={{color: topic.iconColor}} name={topic.icon} size="huge" />
-                </p>
-                <p>{topic.text}</p>
-            </Grid.Column>
-        );
-    });
+    const topicCells = topics.map(topic => <AskMeAboutTopic {...topic} key={topic.name} />);
 
     return (
         <div className="main-content-section">

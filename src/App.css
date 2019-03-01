@@ -46,3 +46,11 @@ body {
 .topic-cell {
     text-align: center;
 }
+
+.ui.header.school-name, .edu-duration {
+    margin-bottom: 0;
+}
+
+.edu-program {
+    font-weight: bold;
+}
