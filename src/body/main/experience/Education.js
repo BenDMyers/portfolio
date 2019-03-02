@@ -8,7 +8,7 @@ const Education = () => {
     const eduCells = education.map((edu, index) => <EducationItem {...edu} key={`edu${index}`} />);
 
     return (
-        <div className="main-content-section">
+        <div id="education" className="main-content-section">
             <Header as="h2">Education</Header>
             <Grid divided>
                 {eduCells}

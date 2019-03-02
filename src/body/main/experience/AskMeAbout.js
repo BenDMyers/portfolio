@@ -8,7 +8,7 @@ const AskMeAbout = () => {
     const topicCells = topics.map(topic => <AskMeAboutTopic {...topic} key={topic.name} />);
 
     return (
-        <div className="main-content-section">
+        <div id="askmeabout" className="main-content-section">
             <Header as="h2">Ask me about...</Header>
             <Grid divided>
                 {topicCells}

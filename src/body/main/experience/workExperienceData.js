@@ -52,8 +52,7 @@ const workExperienceData = [
         startDate: new Date(2016, 0),
         endDate: new Date(2016, 11),
         bullets: [
-            'Modularized and automated an internal product health dashboard by integrating our API with the web application using the React and Redux frameworks.',
-            'Operated in a team with four other interns using the Agile workflow, providing weekly demos.'
+            'Assisted Oklahoma State University students in their understanding of their Computer Science I and Computer Science II classes.'
         ]
     }
 ];

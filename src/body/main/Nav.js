@@ -7,9 +7,9 @@ const Nav = (props) => {
 
     return (
         <Menu role="nav" pointing secondary>
-            <Menu.Item as={Link} active={isActive('/')} to="/">Experience</Menu.Item>
-            <Menu.Item as={Link} active={isActive('/projects')} to="/projects">Projects</Menu.Item>
-            <Menu.Item as={Link} active={isActive('/presentations')} to="/presentations">Presentations</Menu.Item>
+            <Menu.Item as={Link} active={isActive('/')} to="/" color="red">Experience</Menu.Item>
+            <Menu.Item as={Link} active={isActive('/projects')} to="/projects" color="purple">Projects</Menu.Item>
+            <Menu.Item as={Link} active={isActive('/presentations')} to="/presentations" color="blue">Presentations</Menu.Item>
         </Menu>
     );
 };

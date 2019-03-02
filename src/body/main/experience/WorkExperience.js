@@ -8,7 +8,7 @@ const WorkExperience = () => {
     const expCells = workExperience.map((exp, index) => <ExperienceItem {...exp} key={`exp${index}`} />);
 
     return (
-        <div className="main-content-section">
+        <div id="experience" className="main-content-section">
             <Header as="h2">Experience</Header>
             <Grid divided>
                 {expCells}

@@ -8,7 +8,7 @@ const ExperienceItem = (props) => {
     const header = props.employer + (props.location && `, ${props.location}`);
     const duration = <p className="exp-duration"><Duration startDate={props.startDate} endDate={props.endDate} /></p>;
     const description = props.description && <p className="exp-description">{props.description}</p>;
-    const bullets = props.bullets && <ul>{props.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}</ul>;
+    const bullets = props.bullets && <ul className="exp-bullets">{props.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}</ul>;
 
     const titles = props.titles && props.titles.map((title, index) => (
         <Tripartite className="exp-title" key={`${props.employer} ${title.name}`} leftWidth={2} centerWidth={10} rightWidth={4} alignRight={true} style={{width: '120%'}}>
