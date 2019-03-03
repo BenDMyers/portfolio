@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Header, Image} from 'semantic-ui-react';
+import {Header, Image} from 'semantic-ui-react';
 
 import Duration from '../../../utils/Duration';
 import Tripartite from '../../../utils/Tripartite';

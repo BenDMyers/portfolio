@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Header, Image} from 'semantic-ui-react';
+import {Grid, Header} from 'semantic-ui-react';
 
 import education from '../../../data/educationData';
 import EducationItem from './EducationItem';

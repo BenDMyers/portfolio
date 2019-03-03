@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Container, Grid, Segment} from 'semantic-ui-react';
 import './App.css';
 
 import BodyLayout from './body/BodyLayout';

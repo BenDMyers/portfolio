@@ -1,12 +1,12 @@
 import React from 'react';
-import {Link, Route, Switch, withRouter} from 'react-router-dom';
+import {Route, Switch, withRouter} from 'react-router-dom';
 import {Grid, Segment} from 'semantic-ui-react';
 
 import './mainContent.styles.css';
 import Nav from './Nav';
-import ResumeContent from './experience/ResumeContent';
-import ProjectsContent from './projects/ProjectsContent';
-import PresentationsContent from './presentations/PresentationsContent';
+import ResumeContent from './experience/';
+import ProjectsContent from './projects/';
+import PresentationsContent from './presentations/';
 
 const MainPanel = (props) => {
     return (

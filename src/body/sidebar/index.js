@@ -7,7 +7,7 @@ import SocialList from './SocialList';
 
 const Sidebar = (props) => {
     return (
-        <Grid.Column width={props.width} role="aside">
+        <Grid.Column width={props.width} role="complementary">
             <IntroPanel />
             <SocialList />
         </Grid.Column>

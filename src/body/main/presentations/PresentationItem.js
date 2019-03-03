@@ -1,6 +1,5 @@
 import React from 'react';
 import {Header, Image} from 'semantic-ui-react';
-import ReactPlayer from 'react-player';
 
 import Duration from '../../../utils/Duration';
 import ResponsivePlayer from '../../../utils/ResponsivePlayer';

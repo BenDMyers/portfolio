@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid, Header, Icon} from 'semantic-ui-react';
+import {Grid, Header} from 'semantic-ui-react';
 
 import topics from '../../../data/askMeAbout.json';
 import AskMeAboutTopic from './AskMeAboutTopic';
