@@ -1,0 +1,43 @@
+.resume-content hr {
+    border-color: rgba(0, 0, 0, 0.07);
+    border-width: 1px;
+}
+
+.topic-cell {
+    text-align: center;
+}
+
+.ui.header.school-name, .edu-duration, .ui.header.employer-name {
+    margin-bottom: 0;
+}
+
+.edu-program, .exp-program {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.ui.header.honor-name, .ui.header.title-name {
+    margin-bottom: 0;
+    font-size: 90%;
+
+}
+
+.edu-honor-awarded-by {
+    font-style: italic;
+}
+
+.title-bullets {
+    margin: 0;
+}
+
+.exp-bullets li, .title-bullets li {
+    margin-bottom: 1em;
+}
+
+.ui.grid.exp-title {
+    margin-top: 0;
+}
+
+.ui.grid.exp-title div.wide.column {
+    padding-top: 0;
+}

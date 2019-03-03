@@ -1,6 +1,7 @@
 import React from 'react';
 import {Header} from 'semantic-ui-react';
 
+import './presentations.styles.css';
 import PresentationItem from './PresentationItem';
 import presentationData from '../../../data/presentationData';
 

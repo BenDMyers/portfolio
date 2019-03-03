@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Grid} from 'semantic-ui-react';
 
-import Sidebar from './sidebar/Sidebar';
+import Sidebar from './sidebar/';
 import MainPanel from './main/MainPanel';
 
 const BodyLayout = () => {

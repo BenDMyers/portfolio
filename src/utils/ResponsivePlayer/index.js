@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 
+import './responsivePlayer.styles.css';
+
 const ResponsivePlayer = (props) => {
     return (
         <div className="responsive-player-container">

@@ -1,6 +1,7 @@
 import React from 'react';
 import {Header} from 'semantic-ui-react';
 
+import './experience.styles.css';
 import AskMeAbout from './AskMeAbout';
 import Education from './Education';
 import WorkExperience from './WorkExperience';

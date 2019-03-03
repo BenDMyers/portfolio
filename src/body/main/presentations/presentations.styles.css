@@ -1,0 +1,18 @@
+.ui.header.pres-title {
+    margin-bottom: 0;
+}
+
+.pres-organization {
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.pres-content hr {
+    border-color: rgba(0, 0, 0, 0.07);
+    border-width: 1px;
+}
+
+.ui.grid.pres-item {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

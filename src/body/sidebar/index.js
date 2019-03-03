@@ -1,6 +1,7 @@
 import React from 'react';
 import {Grid} from 'semantic-ui-react';
 
+import './sidebar.styles.css';
 import IntroPanel from './IntroPanel';
 import SocialList from './SocialList';
 

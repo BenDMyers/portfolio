@@ -1,6 +1,6 @@
 import React from 'react';
 
-import socials from './social.json';
+import socials from '../../data/social.json';
 import SocialItem from './SocialItem';
 
 const SocialList = () => {

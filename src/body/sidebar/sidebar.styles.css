@@ -1,0 +1,17 @@
+/* SIDEBAR */
+.intro-panel {
+    text-align: center;
+}
+
+.social-header {
+    font-weight: bold;
+    margin-bottom: 0.1em;
+}
+
+.social-link-content {
+    font-size: 125%;
+}
+
+.social-link-content a:hover {
+    text-decoration: underline;
+}

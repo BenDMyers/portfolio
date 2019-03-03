@@ -2,6 +2,7 @@ import React from 'react';
 import {Link, Route, Switch, withRouter} from 'react-router-dom';
 import {Grid, Segment} from 'semantic-ui-react';
 
+import './mainContent.styles.css';
 import Nav from './Nav';
 import ResumeContent from './experience/ResumeContent';
 import ProjectsContent from './projects/ProjectsContent';
