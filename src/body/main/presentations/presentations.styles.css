@@ -16,3 +16,7 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
+.ui.grid.pres-item:nth-child(2) {
+    margin-top: 0;
+}

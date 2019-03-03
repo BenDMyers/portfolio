@@ -1,18 +1,18 @@
 const presentationData = [
     {
         name: 'React Codelab | Local Hack Day 2018',
-        organization: 'Association for Computing Machinery, Oklahoma State University Chapter',
+        organization: 'Association for Computing Machinery, Oklahoma State University',
         logo: './acm.png',
-        description: 'classes in both foo and bar',
+        description: 'A livestream covering the basics of front-end web development with React in an hour, put on for students at my alma mater for Local Hack Day 2018.',
         date: new Date(2018, 11),
         videoUrl: 'https://www.youtube.com/watch?v=aRZWEdJkHDs',
         tags: ['dev']
     },
     {
         name: 'Codelab: Desktop Applications with Electron',
-        organization: 'Association for Computing Machinery, Oklahoma State University Chapter',
+        organization: 'Association for Computing Machinery, Oklahoma State University',
         logo: './acm.png',
-        description: 'classes in both foo and bar',
+        description: 'A codelab teaching the basics of building cross-platform desktop applications with Electron, put on for the Association of Computing Machinery at Oklahoma State University.',
         date: new Date(2018, 0),
         videoUrl: 'https://www.youtube.com/watch?v=RVedymcdsbU',
         tags: ['dev']
@@ -21,7 +21,7 @@ const presentationData = [
         name: 'The Disability Conversation',
         organization: 'TEDxOStateU',
         logo: 'https://i1.wp.com/yukaichou.com/wp-content/uploads/2017/04/tedx-logo.png?fit=660%2C196&ssl=1',
-        description: 'classes in both foo and bar',
+        description: 'A TEDx talk on how the ways we do or don\'t talk about disability matter. Presented at the TEDxOStateU conference in Stillwater, OK in 2015.',
         date: new Date(2015, 3),
         videoUrl: 'https://www.youtube.com/watch?v=ccIAqPjwKcY',
         tags: ['disability']
