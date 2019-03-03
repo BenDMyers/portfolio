@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Header, Image} from 'semantic-ui-react';
 
 import Duration from '../../../utils/Duration';
@@ -8,7 +9,7 @@ import Tripartite from '../../../utils/Tripartite';
 const PresentationItem = (props) => {
     const duration = props.date && <p className="pres-duration"><Duration endDate={props.date} /></p>;
     const description = props.description && <p className="pres-description">{props.description}</p>;
-    const bullets = props.bullets && <ul>{props.bullets.map(bullet => <li>{bullet}</li>)}</ul>;
+    const bullets = props.bullets && <ul>{props.bullets.map((bullet, index) => <li key={index}>{bullet}</li>)}</ul>;
     const player = props.videoUrl && <ResponsivePlayer url={props.videoUrl} />
 
     return (
@@ -27,5 +28,15 @@ const PresentationItem = (props) => {
         </Tripartite>
     );
 };
+
+PresentationItem.propTypes = {
+    bullets: PropTypes.arrayOf(PropTypes.string),
+    date: PropTypes.instanceOf(Date),
+    description: PropTypes.string,
+    logo: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    organization: PropTypes.string.isRequired,
+    videoUrl: PropTypes.string
+}
 
 export default PresentationItem;

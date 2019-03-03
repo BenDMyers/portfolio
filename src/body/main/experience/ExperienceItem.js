@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Header, Image} from 'semantic-ui-react';
 
 import Duration from '../../../utils/Duration';
@@ -11,7 +12,7 @@ const ExperienceItem = (props) => {
     const bullets = props.bullets && <ul className="exp-bullets">{props.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}</ul>;
 
     const titles = props.titles && props.titles.map((title, index) => (
-        <Tripartite className="exp-title" key={`${props.employer} ${title.name}`} leftWidth={2} centerWidth={10} rightWidth={4} alignRight={true} style={{width: '120%'}}>
+        <Tripartite className="exp-title" key={`${props.employer} ${title.name} ${index}`} leftWidth={2} centerWidth={10} rightWidth={4} alignRight={true} style={{width: '120%'}}>
             <></>
             <div>
                 <Header as='h4' className='title-name'>{title.name}</Header>
@@ -39,6 +40,24 @@ const ExperienceItem = (props) => {
             {titles}
         </>
     );
+};
+
+ExperienceItem.propTypes = {
+    bullets: PropTypes.arrayOf(PropTypes.string),
+    description: PropTypes.string,
+    employer: PropTypes.string.isRequired,
+    endDate: PropTypes.instanceOf(Date),
+    location: PropTypes.string,
+    logo: PropTypes.string,
+    program: PropTypes.string,
+    startDate: PropTypes.instanceOf(Date),
+    titles: PropTypes.arrayOf(PropTypes.shape({
+        bullets: PropTypes.arrayOf(PropTypes.string),
+        description: PropTypes.string,
+        endDate: PropTypes.instanceOf(Date),
+        name: PropTypes.string,
+        startDate: PropTypes.instanceOf(Date)
+    }))
 };
 
 export default ExperienceItem;

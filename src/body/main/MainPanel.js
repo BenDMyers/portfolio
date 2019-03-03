@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Route, Switch, withRouter} from 'react-router-dom';
 import {Grid, Segment} from 'semantic-ui-react';
 
@@ -22,5 +23,9 @@ const MainPanel = (props) => {
         </Grid.Column>
     );
 };
+
+MainPanel.propTypes = {
+    width: PropTypes.number
+}
 
 export default withRouter(MainPanel);

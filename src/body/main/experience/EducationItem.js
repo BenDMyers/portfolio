@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Header, Image} from 'semantic-ui-react';
 
 import Duration from '../../../utils/Duration';
@@ -9,10 +10,10 @@ const EducationItem = (props) => {
     const duration = <p className="edu-duration"><Duration startDate={props.startDate} endDate={props.endDate} /></p>;
     const gpa = props.gpa && <p>GPA: {props.gpa}</p>;
     const description = props.description && <p className="edu-description">{props.description}</p>;
-    const bullets = props.bullets && <ul>{props.bullets.map(bullet => <li>{bullet}</li>)}</ul>;
+    const bullets = props.bullets && <ul>{props.bullets.map((bullet, index) => <li key={`${props.school}${index}`}>{bullet}</li>)}</ul>;
 
     const honors = props.honors && props.honors.map((honor, index) => (
-        <Tripartite key={`${props.school} ${honor.name}`} leftWidth={2} centerWidth={10} rightWidth={4} alignRight={true}>
+        <Tripartite key={`${props.school} ${index}`} leftWidth={2} centerWidth={10} rightWidth={4} alignRight={true}>
             <></>
             <>
                 <Header as='h4' className='honor-name'>{honor.name}</Header>
@@ -41,6 +42,24 @@ const EducationItem = (props) => {
             {honors}
         </>
     );
+};
+
+EducationItem.propTypes = {
+    bullets: PropTypes.arrayOf(PropTypes.string),
+    description: PropTypes.string,
+    endDate: PropTypes.instanceOf(Date),
+    gpa: PropTypes.number,
+    honors: PropTypes.arrayOf(PropTypes.shape({
+        awardedBy: PropTypes.string,
+        description: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired
+    })),
+    location: PropTypes.string,
+    name: PropTypes.string,
+    program: PropTypes.string.isRequired,
+    school: PropTypes.string.isRequired,
+    schoolLogo: PropTypes.string,
+    startDate: PropTypes.instanceOf(Date)
 };
 
 export default EducationItem;

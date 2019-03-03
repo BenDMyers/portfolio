@@ -3,7 +3,7 @@ import {Header} from 'semantic-ui-react';
 
 const ProjectsContent = () => {
     document.title = 'Projects | Ben Myers'
-    return <Header as="h2">What I've made</Header>
+    return <Header as="h2">What I&apos;ve made</Header>
 }
 
 export default ProjectsContent;

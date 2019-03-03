@@ -6,7 +6,7 @@ class IntroPanel extends Component {
         return (
             <Segment className="intro-panel">
                 <Header as="h1">
-                    Hi, I'm Ben Myers.
+                    Hi, I&apos;m Ben Myers.
                 </Header>
                 <Image circular src="./avatar.jpg" alt="Headshot of Ben Myers" />
                 <p style={{marginTop: '1em'}}>

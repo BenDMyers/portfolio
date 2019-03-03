@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Grid} from 'semantic-ui-react';
 
 import './sidebar.styles.css';
@@ -12,6 +13,10 @@ const Sidebar = (props) => {
             <SocialList />
         </Grid.Column>
     );
+};
+
+Sidebar.propTypes = {
+    width: PropTypes.number.isRequired
 }
 
 export default Sidebar;

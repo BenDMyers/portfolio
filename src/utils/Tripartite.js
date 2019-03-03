@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Grid} from 'semantic-ui-react';
 
 const Tripartite = ({leftWidth, centerWidth, rightWidth, children, alignRight, ...rest}) => {
@@ -14,6 +15,14 @@ const Tripartite = ({leftWidth, centerWidth, rightWidth, children, alignRight, .
             <Grid.Column width={rightWidth} style={rightStyles}>{children[2]}</Grid.Column>
         </Grid>
     );
+};
+
+Tripartite.propTypes = {
+    alignRight: PropTypes.bool,
+    centerWidth: PropTypes.number.isRequired,
+    children: PropTypes.arrayOf(PropTypes.node),
+    leftWidth: PropTypes.number.isRequired,
+    rightWidth: PropTypes.number.isRequired
 };
 
 export default Tripartite;

@@ -17,7 +17,7 @@ const PresentationsContent = () => {
 
     return (
         <div className="pres-content main-content-section" role="main">
-            <Header as='h2'>Things I've said</Header>
+            <Header as='h2'>Things I&apos;ve said</Header>
             {presentations}
         </div>
     );

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Link, withRouter} from 'react-router-dom';
 import {Menu} from 'semantic-ui-react';
 
@@ -12,6 +13,10 @@ const Nav = (props) => {
             <Menu.Item as={Link} active={isActive('/presentations')} to="/presentations" color="blue">Presentations</Menu.Item>
         </Menu>
     );
+};
+
+Nav.propTypes = {
+    location: PropTypes.object
 };
 
 export default withRouter(Nav);

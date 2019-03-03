@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Icon, Segment} from 'semantic-ui-react';
 
 const SocialItem = (props) => {
@@ -15,6 +16,15 @@ const SocialItem = (props) => {
             </p>
         </Segment>
     );
+}
+
+SocialItem.propTypes = {
+    icon: PropTypes.string.isRequired,
+    iconColor: PropTypes.string,
+    label: PropTypes.string,
+    name: PropTypes.string,
+    text: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
 }
 
 export default SocialItem;

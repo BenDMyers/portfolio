@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Duration = ({startDate, endDate, className}) => {
     const screenreaderDateConfig = {month: 'long', year: 'numeric'};
@@ -30,5 +31,11 @@ const Duration = ({startDate, endDate, className}) => {
         <span className={`duration ${className || ''}`}>{duration}</span>
     </>);
 };
+
+Duration.propTypes = {
+    className: PropTypes.string,
+    endDate: PropTypes.instanceOf(Date),
+    startDate: PropTypes.instanceOf(Date)
+}
 
 export default Duration;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Grid, Icon} from 'semantic-ui-react';
 
 const AskMeAboutTopic = (props) => {
@@ -22,5 +23,12 @@ const AskMeAboutTopic = (props) => {
         </Grid.Column>
     );
 }
+
+AskMeAboutTopic.propTypes = {
+    cornerIcon: PropTypes.string,
+    icon: PropTypes.string.isRequired,
+    iconColor: PropTypes.string,
+    text: PropTypes.string.isRequired
+};
 
 export default AskMeAboutTopic;
