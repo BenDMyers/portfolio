@@ -1,7 +1,7 @@
 import React from 'react';
 import {Grid, Header, Icon} from 'semantic-ui-react';
 
-import topics from './askMeAbout.json';
+import topics from '../../../data/askMeAbout.json';
 import AskMeAboutTopic from './AskMeAboutTopic';
 
 const AskMeAbout = () => {

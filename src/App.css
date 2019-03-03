@@ -67,11 +67,11 @@ body {
     text-align: center;
 }
 
-.ui.header.school-name, .edu-duration, .ui.header.employer-name {
+.ui.header.school-name, .edu-duration, .ui.header.employer-name, .ui.header.pres-title {
     margin-bottom: 0;
 }
 
-.edu-program, .exp-program {
+.edu-program, .exp-program, .pres-organization {
     font-weight: bold;
     font-size: 110%;
 }
@@ -100,4 +100,25 @@ body {
 
 .ui.grid.exp-title div.wide.column {
     padding-top: 0;
+}
+
+.responsive-player-container {
+    position: relative;
+    padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
+}
+
+.responsive-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pres-content hr {
+    border-color: rgba(0, 0, 0, 0.07);
+    border-width: 1px;
+}
+
+.ui.grid.pres-item {
+    margin-top: 5%;
+    margin-bottom: 5%;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Grid, Header} from 'semantic-ui-react';
 
-import workExperience from './workExperienceData';
+import workExperience from '../../../data/workExperienceData';
 import ExperienceItem from './ExperienceItem';
 
 const WorkExperience = () => {

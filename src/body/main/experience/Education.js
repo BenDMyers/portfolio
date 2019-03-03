@@ -1,7 +1,7 @@
 import React from 'react';
 import {Grid, Header, Image} from 'semantic-ui-react';
 
-import education from './educationData';
+import education from '../../../data/educationData';
 import EducationItem from './EducationItem';
 
 const Education = () => {
