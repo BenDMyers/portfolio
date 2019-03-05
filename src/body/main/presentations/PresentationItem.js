@@ -14,7 +14,7 @@ const PresentationItem = (props) => {
 
     return (
         <Tripartite leftWidth={2} centerWidth={10} rightWidth={4} className="pres-item">
-            <Image src={props.logo} alt={`${props.name} logo`} />
+            <Image src={props.logo} alt={`${props.organization} logo`} />
             <>
                 <Header as='h3' className='pres-title'>{props.name}</Header>
                 <p className='pres-organization'>{props.organization}</p>

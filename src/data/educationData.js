@@ -4,13 +4,9 @@ const educationData = [
         location: 'Stillwater, OK',
         schoolLogo: './osu.png',
         program: 'Bachelor of Science, Computer Science',
-        // description: 'classes in both foo and bar',
         startDate: new Date(2014, 7),
         endDate: new Date(2018, 4),
-        gpa: 3.22,
-        // bullets: [
-        //     'Here we are', 'Dont turn away now'
-        // ],
+        gpa: 3.19,
         honors: [
             {
                 name: 'Second Place',
