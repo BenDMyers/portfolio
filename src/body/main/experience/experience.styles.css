@@ -7,11 +7,11 @@
     text-align: center;
 }
 
-.ui.header.school-name, .edu-duration, .ui.header.employer-name {
+.ui.header.school-name, .edu-duration, .ui.header.employer-name, .ui.header.lead-org {
     margin-bottom: 0;
 }
 
-.edu-program, .exp-program {
+.edu-program, .exp-program, .lead-role {
     font-weight: bold;
     font-size: 110%;
 }

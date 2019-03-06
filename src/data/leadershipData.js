@@ -2,10 +2,24 @@ const leadershipData = [
     {
         organization: 'Association for Computing Machinery, Oklahoma State University',
         role: 'President',
-        logo: './osu.png',
+        logo: './acm.png',
         startDate: new Date(2016, 7),
         endDate: new Date(2018, 4),
-        description: 'Facilitates an understanding of the professional side of computer science. Organizes meetings that explore aspects of the field, and leads members to collaboratively program a project worthy of portfolios.'
+        bullets: [
+            'Organized meetings that explored technologies and professional aspects of the computer science field.',
+            'Facilitated hackathons, game jams, and programming competitions.',
+            'Volunteered at a local elementary school, training fourth- and fifth-graders to program in JavaScript.'
+        ]
+    },
+    {
+        organization: 'Boy Scouts of America',
+        role: 'Eagle Scout',
+        logo: './eagle.gif',
+        endDate: new Date(2014, 7),
+        bullets: [
+            'Prepared and coordinated the improvement of a local fire department’s veteran memorial for an Eagle project.',
+            'Led STEM and disability advocacy programs at summer camps and winter camps.'
+        ]
     }
 ];
 

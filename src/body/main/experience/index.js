@@ -3,6 +3,7 @@ import React from 'react';
 import './experience.styles.css';
 import AskMeAbout from './AskMeAbout';
 import Education from './Education';
+import Leadership from './Leadership';
 import WorkExperience from './WorkExperience';
 
 const ResumeContent = () => {
@@ -14,6 +15,8 @@ const ResumeContent = () => {
             <Education />
             <hr />
             <WorkExperience />
+            <hr />
+            <Leadership />
         </div>
     );
 }
