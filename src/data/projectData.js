@@ -11,7 +11,7 @@ const projectData = [
             demo: 'https://www.benmyers.dev',
             repo: 'https://github.com/BenDMyers/portfolio'
         },
-        image: './portfolio.png'
+        image: './portfolio_logo.png'
     },
     {
         name: 'MoodTrackr',
@@ -54,7 +54,7 @@ const projectData = [
             repo: 'https://github.com/BenDMyers/Merge',
             video: 'https://www.youtube.com/watch?v=4O2iaATjFRU'
         },
-        image: './merge.png'
+        image: './merge_logo.png'
     }
 ];
 

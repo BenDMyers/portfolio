@@ -7,7 +7,6 @@ import Tripartite from '../../../utils/Tripartite';
 const ProjectItem = (props) => {
     const description = props.description && <p className="proj-description">{props.description}</p>;
     const bullets = props.bullets && <ul>{props.bullets.map((bullet, index) => <li key={index}>{bullet}</li>)}</ul>;
-    console.log({gen: generateLinks(props.links, props.name)})
 
     return (
         <Tripartite leftWidth={2} centerWidth={10} rightWidth={4} className="proj-item">
@@ -26,7 +25,6 @@ const ProjectItem = (props) => {
 };
 
 function generateLinks(links, name) {
-    console.log(links)
     let linkItems = [];
 
     if(links.demo) {
@@ -77,7 +75,6 @@ function generateLinks(links, name) {
         );
     }
 
-    console.log(linkItems)
     return linkItems;
 }
 
