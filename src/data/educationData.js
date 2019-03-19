@@ -9,12 +9,6 @@ const educationData = [
         gpa: 3.19,
         honors: [
             {
-                name: 'Second Place',
-                awardedBy: 'Hacklahoma',
-                description: 'MoodTrackr was built during the Hacklahoma 2018 hackathon, and was awarded second place and Best Use of Amazon Web Services. MoodTrackr\'s front end was developed in React. Its back end is a REST API built in Python, connected to an AI model in Python and Keras.',
-                date: new Date(2018, 2)
-            },
-            {
                 name: 'Outstanding Service Award',
                 awardedBy: 'College of Arts and Sciences',
                 description: 'Awarded to recognize dedication to, and support of, the Computer Science Department through efforts in the student chapter of the Association for Computing Machinery, representing the department to prospective students, and stepping in as a substitute teacher for Computer Science I twice.',
