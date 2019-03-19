@@ -38,4 +38,7 @@ Duration.propTypes = {
     startDate: PropTypes.instanceOf(Date)
 }
 
+const [JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER] = Array(12).keys();
+
 export default Duration;
+export {JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER};

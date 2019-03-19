@@ -1,3 +1,5 @@
+import {JANUARY, MAY, JUNE, AUGUST, DECEMBER} from '../utils/Duration';
+
 const workExperienceData = [
     {
         employer: 'USAA',
@@ -5,7 +7,7 @@ const workExperienceData = [
         logo: './usaa.png',
         program: 'Full-Stack Engineer',
         // description: 'classes in both foo and bar',
-        startDate: new Date(2018, 5),
+        startDate: new Date(2018, JUNE),
         // bullets: [
         //     'Here we are', 'Dont turn away now'
         // ],
@@ -16,7 +18,7 @@ const workExperienceData = [
                     'Training in Kafka.'
                     // 'Developed and implemented React/Redux components for the redesign of the credit card, checking, and savings account summaries, which are critical pages for the bank that receive more than 60 million views a month.'
                 ],
-                startDate: new Date(2019, 0)
+                startDate: new Date(2019, JANUARY)
             },
             {
                 name: 'Account Summary Redesign',
@@ -25,8 +27,8 @@ const workExperienceData = [
                     'Championed web accessibility on our products.',
                     'Collaborated in an Agile/Scrum environment.'
                 ],
-                startDate: new Date(2018, 5),
-                endDate: new Date(2018, 11)
+                startDate: new Date(2018, JUNE),
+                endDate: new Date(2018, DECEMBER)
             }
         ]
     },
@@ -36,8 +38,8 @@ const workExperienceData = [
         logo: './usaa.png',
         program: 'IT Intern',
         // description: 'classes in both foo and bar',
-        startDate: new Date(2017, 4),
-        endDate: new Date(2017, 7),
+        startDate: new Date(2017, MAY),
+        endDate: new Date(2017, AUGUST),
         bullets: [
             'Modularized and automated an internal product health dashboard by integrating our API with the web application using the React and Redux frameworks.',
             'Operated in a team with four other interns using the Agile workflow, providing weekly demos.'
@@ -49,8 +51,8 @@ const workExperienceData = [
         logo: './lasso.png',
         program: 'Computer Science Tutor',
         // description: 'classes in both foo and bar',
-        startDate: new Date(2016, 0),
-        endDate: new Date(2016, 11),
+        startDate: new Date(2016, JANUARY),
+        endDate: new Date(2016, DECEMBER),
         bullets: [
             'Assisted Oklahoma State University students in their understanding of their Computer Science I and Computer Science II classes.'
         ]
