@@ -20,3 +20,7 @@
 .ui.grid.pres-item:nth-child(2) {
     margin-top: 0;
 }
+
+.proj-bullets li {
+    margin-bottom: 1em;
+}

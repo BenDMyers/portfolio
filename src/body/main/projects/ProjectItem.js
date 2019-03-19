@@ -6,7 +6,7 @@ import Tripartite from '../../../utils/Tripartite';
 
 const ProjectItem = (props) => {
     const description = props.description && <p className="proj-description">{props.description}</p>;
-    const bullets = props.bullets && <ul>{props.bullets.map((bullet, index) => <li key={index}>{bullet}</li>)}</ul>;
+    const bullets = props.bullets && <ul className="proj-bullets">{props.bullets.map((bullet, index) => <li key={index}>{bullet}</li>)}</ul>;
 
     return (
         <Tripartite leftWidth={2} centerWidth={10} rightWidth={4} className="proj-item">
