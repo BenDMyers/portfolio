@@ -3,6 +3,17 @@
     border-width: 1px;
 }
 
+@media screen and (max-width: 991px) {
+    #askmeabout .grid {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .edu-program {
+        margin-bottom: 0;
+    }
+}
+
 .topic-cell {
     text-align: center;
 }
@@ -40,4 +51,23 @@
 
 .ui.grid.exp-title div.wide.column {
     padding-top: 0;
+}
+
+.computer.only .duration {
+    font-style: italic;
+}
+
+.computer.only .edu-grade {
+    font-style: italic;
+}
+
+.right-substitute .duration {
+    font-style: italic;
+    font-weight: normal;
+}
+
+.right-substitute.edu-right-sub {
+    font-style: italic;
+    font-weight: normal;
+    margin-top: 0;
 }

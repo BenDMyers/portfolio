@@ -7,7 +7,7 @@ import ResponsivePlayer from '../../../utils/ResponsivePlayer';
 import Tripartite from '../../../utils/Tripartite';
 
 const PresentationItem = (props) => {
-    const duration = props.date && <p className="pres-duration"><Duration endDate={props.date} /></p>;
+    const duration = props.date && <Duration endDate={props.date} />;
     const description = props.description && <p className="pres-description">{props.description}</p>;
     const bullets = props.bullets && <ul>{props.bullets.map((bullet, index) => <li key={index}>{bullet}</li>)}</ul>;
     const player = props.videoUrl && <ResponsivePlayer url={props.videoUrl} />
@@ -17,13 +17,16 @@ const PresentationItem = (props) => {
             <Image src={props.logo} alt={`${props.organization} logo`} />
             <>
                 <Header as='h3' className='pres-title'>{props.name}</Header>
-                <p className='pres-organization'>{props.organization}</p>
+                <p className='pres-organization'>
+                    {props.organization}
+                    {duration && <span className="pres-duration right-substitute"> · {duration}</span>}
+                </p>
                 {description}
                 {bullets}
                 {player}
             </>
             <div style={{textAlign: 'right'}}>
-                {duration}
+                {duration && <p className="pres-duration">{duration}</p>}
             </div>
         </Tripartite>
     );

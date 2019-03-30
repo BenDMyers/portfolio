@@ -24,3 +24,7 @@
 .proj-bullets li {
     margin-bottom: 1em;
 }
+
+.computer.only .pres-duration {
+    font-style: italic;
+}

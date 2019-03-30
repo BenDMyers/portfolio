@@ -34,9 +34,9 @@ const EducationItem = (props) => {
                 <>
                     <Header as='h3' className='school-name'>{header}</Header>
                     <p className='edu-program'>{props.program}</p>
-                    <p className="edu-program right-substitute">
+                    <p className="edu-right-sub right-substitute">
                         <span className="edu-duration">{duration}</span>
-                        {props.gpa && <span> · GPA: {props.gpa}</span>}
+                        {props.gpa && <span className="edu-grade"> · GPA: {props.gpa}</span>}
                     </p>
                     {description}
                     {bullets}
