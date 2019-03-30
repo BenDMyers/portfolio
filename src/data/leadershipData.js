@@ -20,7 +20,8 @@ const leadershipData = [
         endDate: new Date(2014, AUGUST),
         bullets: [
             'Prepared and coordinated the improvement of a local fire department’s veteran memorial for an Eagle project.',
-            'Led STEM and disability advocacy programs at summer camps and winter camps.'
+            'Led STEM and disability advocacy programs at summer camps and winter camps.',
+            'Vigil Honor member of the Order of the Arrow, Scoutings\'s National Honor Society.'
         ]
     }
 ];
