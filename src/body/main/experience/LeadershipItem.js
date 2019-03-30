@@ -7,7 +7,7 @@ import Tripartite from '../../../utils/Tripartite';
 
 const LeadershipItem = (props) => {
     const header = props.organization;
-    const duration = <p className="edu-duration"><Duration startDate={props.startDate} endDate={props.endDate} /></p>;
+    const duration = <Duration startDate={props.startDate} endDate={props.endDate} />;
     const description = props.description && <p className="edu-description">{props.description}</p>;
     const bullets = props.bullets && <ul>{props.bullets.map((bullet, index) => <li key={`${props.school}${index}`}>{bullet}</li>)}</ul>;
 
@@ -17,12 +17,15 @@ const LeadershipItem = (props) => {
                 <Image src={props.logo} alt={`${props.organization} logo`} />
                 <>
                     <Header as='h3' className='lead-org'>{header}</Header>
-                    <p className='lead-role'>{props.role}</p>
+                    <p className='lead-role'>
+                        {props.role}
+                        <span className="edu-duration right-substitute"> · {duration}</span>
+                    </p>
                     {description}
                     {bullets}
                 </>
                 <div style={{textAlign: 'right'}}>
-                    {duration}
+                    <p className="edu-duration">{duration}</p>
                 </div>
             </Tripartite>
         </>

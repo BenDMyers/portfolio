@@ -7,7 +7,7 @@ import Tripartite from '../../../utils/Tripartite';
 
 const ExperienceItem = (props) => {
     const header = props.employer + (props.location && `, ${props.location}`);
-    const duration = <p className="exp-duration"><Duration startDate={props.startDate} endDate={props.endDate} /></p>;
+    const duration = <Duration startDate={props.startDate} endDate={props.endDate} />;
     const description = props.description && <p className="exp-description">{props.description}</p>;
     const bullets = props.bullets && <ul className="exp-bullets">{props.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}</ul>;
 
@@ -15,7 +15,13 @@ const ExperienceItem = (props) => {
         <Tripartite className="exp-title" key={`${props.employer} ${title.name} ${index}`} leftWidth={2} centerWidth={10} rightWidth={4} alignRight={true} style={{width: '120%'}}>
             <></>
             <div>
-                <Header as='h4' className='title-name'>{title.name}</Header>
+                <Header as='h4' className='title-name'>
+                    {title.name}
+                    {(title.startDate || title.endDate) ?
+                        <span className="right-substitute"> · <Duration startDate={title.startDate} endDate={title.endDate} /></span> :
+                        <></>
+                    }
+                </Header>
                 {title.description && <p>{title.description}</p>}
                 {title.bullets && <ul className="title-bullets">{title.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}</ul>}
             </div>
@@ -29,12 +35,15 @@ const ExperienceItem = (props) => {
                 <Image src={props.logo} alt={`${props.employer} logo`} />
                 <>
                     <Header as='h3' className='employer-name'>{header}</Header>
-                    <p className='exp-program'>{props.program}</p>
+                    <p className='exp-program'>
+                        {props.program}
+                        <span className="right-substitute exp-duration"> · {duration}</span>
+                    </p>
                     {description}
                     {bullets}
                 </>
                 <div style={{textAlign: 'right'}}>
-                    {duration}
+                    <p className="exp-duration">{duration}</p>
                 </div>
             </Tripartite>
             {titles}

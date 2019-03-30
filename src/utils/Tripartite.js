@@ -10,9 +10,20 @@ const Tripartite = ({leftWidth, centerWidth, rightWidth, children, alignRight, .
 
     return (
         <Grid {...rest}>
-            <Grid.Column width={leftWidth} style={{paddingRight: 0}}>{children[0]}</Grid.Column>
-            <Grid.Column width={centerWidth}>{children[1]}</Grid.Column>
-            <Grid.Column width={rightWidth} style={rightStyles}>{children[2]}</Grid.Column>
+            <Grid.Column width={leftWidth} style={{paddingRight: 0}}>
+                {children[0]}
+            </Grid.Column>
+
+            <Grid.Column width={centerWidth} className="computer only">
+                {children[1]}
+            </Grid.Column>
+            <Grid.Column width={centerWidth + rightWidth} className="tablet mobile only">
+                {children[1]}
+            </Grid.Column>
+
+            <Grid.Column width={rightWidth} style={rightStyles} className="computer only">
+                {children[2]}
+            </Grid.Column>
         </Grid>
     );
 };

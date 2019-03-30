@@ -7,7 +7,7 @@ import Tripartite from '../../../utils/Tripartite';
 
 const EducationItem = (props) => {
     const header = props.school + (props.location && `, ${props.location}`);
-    const duration = <p className="edu-duration"><Duration startDate={props.startDate} endDate={props.endDate} /></p>;
+    const duration = <Duration startDate={props.startDate} endDate={props.endDate} />;
     const gpa = props.gpa && <p>GPA: {props.gpa}</p>;
     const description = props.description && <p className="edu-description">{props.description}</p>;
     const bullets = props.bullets && <ul>{props.bullets.map((bullet, index) => <li key={`${props.school}${index}`}>{bullet}</li>)}</ul>;
@@ -17,7 +17,10 @@ const EducationItem = (props) => {
             <></>
             <>
                 <Header as='h4' className='honor-name'>{honor.name}</Header>
-                <p className='edu-honor-awarded-by'>{honor.awardedBy}</p>
+                <p className='edu-honor-awarded-by'>
+                    {honor.awardedBy}
+                    <span className="right-substitute"> · {honor.date instanceof Date ? <Duration endDate={honor.date} /> : honor.date}</span>
+                </p>
                 <p>{honor.description}</p>
             </>
             {honor.date instanceof Date ? <Duration endDate={honor.date} /> : honor.date}
@@ -31,11 +34,15 @@ const EducationItem = (props) => {
                 <>
                     <Header as='h3' className='school-name'>{header}</Header>
                     <p className='edu-program'>{props.program}</p>
+                    <p className="edu-program right-substitute">
+                        <span className="edu-duration">{duration}</span>
+                        {props.gpa && <span> · GPA: {props.gpa}</span>}
+                    </p>
                     {description}
                     {bullets}
                 </>
                 <div style={{textAlign: 'right'}}>
-                    {duration}
+                    <p className="edu-duration">{duration}</p>
                     {gpa}
                 </div>
             </Tripartite>
