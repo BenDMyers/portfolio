@@ -1,3 +1,9 @@
+@media screen and (max-width: 991px) {
+    .proj-tagline {
+        margin-bottom: 0;
+    }
+}
+
 .ui.header.proj-title {
     margin-bottom: 0;
 }
@@ -19,4 +25,17 @@
 
 .ui.grid.proj-item:nth-child(2) {
     margin-top: 0;
+}
+
+.proj-links.right-substitute {
+    margin-top: 0;
+}
+
+.proj-links.right-substitute p.proj-link {
+    display: inline;
+}
+
+.proj-links-bullet {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }

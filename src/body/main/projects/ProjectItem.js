@@ -14,6 +14,7 @@ const ProjectItem = (props) => {
             <>
                 <Header as='h3' className='proj-title'>{props.name}</Header>
                 <p className='proj-tagline'>{props.tagline}</p>
+                <p className='proj-links right-substitute'>{generateLinks(props.links, props.name, true)}</p>
                 {description}
                 {bullets}
             </>
@@ -24,7 +25,7 @@ const ProjectItem = (props) => {
     );
 };
 
-function generateLinks(links, name) {
+function generateLinks(links, name, mobile=false) {
     let linkItems = [];
 
     if(links.demo) {
@@ -73,6 +74,16 @@ function generateLinks(links, name) {
                 </a>
             </p>
         );
+    }
+
+    if(mobile) {
+        linkItems = linkItems.reduce((newList, link, index) => {
+            newList.push(link);
+            if(index < linkItems.length - 1) {
+                newList.push(<span className="proj-links-bullet">·</span>);
+            }
+            return newList;
+        }, []);
     }
 
     return linkItems;
