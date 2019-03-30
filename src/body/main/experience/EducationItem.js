@@ -8,7 +8,7 @@ import Tripartite from '../../../utils/Tripartite';
 const EducationItem = (props) => {
     const header = props.school + (props.location && `, ${props.location}`);
     const duration = <Duration startDate={props.startDate} endDate={props.endDate} />;
-    const gpa = props.gpa && <p>GPA: {props.gpa}</p>;
+    const gpa = props.gpa && <p className="edu-grade">GPA: {props.gpa}</p>;
     const description = props.description && <p className="edu-description">{props.description}</p>;
     const bullets = props.bullets && <ul>{props.bullets.map((bullet, index) => <li key={`${props.school}${index}`}>{bullet}</li>)}</ul>;
 

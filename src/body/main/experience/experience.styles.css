@@ -53,6 +53,10 @@
     padding-top: 0;
 }
 
+li.lead-bullets {
+    margin-bottom: 1em;
+}
+
 .computer.only .duration {
     font-style: italic;
 }

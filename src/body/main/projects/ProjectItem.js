@@ -9,7 +9,7 @@ const ProjectItem = (props) => {
     const bullets = props.bullets && <ul className="proj-bullets">{props.bullets.map((bullet, index) => <li key={index}>{bullet}</li>)}</ul>;
 
     return (
-        <Tripartite leftWidth={2} centerWidth={10} rightWidth={4} className="proj-item">
+        <Tripartite leftWidth={2} centerWidth={12} rightWidth={2} className="proj-item">
             <Image alt={`Icon for ${props.name}`} src={props.image} className='proj-image' />
             <>
                 <Header as='h3' className='proj-title'>{props.name}</Header>

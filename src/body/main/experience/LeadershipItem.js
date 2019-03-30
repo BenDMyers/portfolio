@@ -9,7 +9,7 @@ const LeadershipItem = (props) => {
     const header = props.organization;
     const duration = <Duration startDate={props.startDate} endDate={props.endDate} />;
     const description = props.description && <p className="edu-description">{props.description}</p>;
-    const bullets = props.bullets && <ul>{props.bullets.map((bullet, index) => <li key={`${props.school}${index}`}>{bullet}</li>)}</ul>;
+    const bullets = props.bullets && <ul>{props.bullets.map((bullet, index) => <li key={`${props.school}${index}`} className="lead-bullets">{bullet}</li>)}</ul>;
 
     return (
         <>
