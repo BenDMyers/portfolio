@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {Header, Image} from 'semantic-ui-react';
 
 import Duration from '../../../utils/Duration';
-import Tripartite from '../../../utils/Tripartite2';
+import Tripartite from '../../../utils/Tripartite';
 
 const EducationItem = (props) => {
     const header = props.school + (props.location && `, ${props.location}`);
@@ -12,7 +12,7 @@ const EducationItem = (props) => {
     const description = props.description && <p className="edu-description">{props.description}</p>;
     const bullets = props.bullets && <ul>{props.bullets.map((bullet, index) => <li key={`${props.school}${index}`}>{bullet}</li>)}</ul>;
 
-    const honors = props.honors && props.honors.map((honor, index) => {
+    const honors = props.honors ? props.honors.map((honor, index) => {
         let center = (
             <React.Fragment>
                 <Header as='h4' className='honor-name'>{honor.name}</Header>
@@ -27,12 +27,12 @@ const EducationItem = (props) => {
         let right = honor.date instanceof Date ? <Duration endDate={honor.date} /> : honor.date;
 
         return {center, right};
-    });
+    }) : [];
 
 
     let rows = [
         {
-            center: (<div style={{paddingTop: '1rem'}}>
+            center: (<div>
                 <Header as='h3' className='school-name'>{header}</Header>
                 <p className='edu-program'>{props.program}</p>
                 <p className="edu-right-sub right-substitute">
@@ -48,7 +48,7 @@ const EducationItem = (props) => {
     ];
 
     return (
-        <Tripartite left={<Image src={props.schoolLogo} alt={`${props.name} logo`} />} rows={rows} alignRight={true} />
+        <Tripartite className="edu-item" left={<Image src={props.schoolLogo} alt={`${props.name} logo`} />} rows={rows} alignRight={true} />
     )
 };
 

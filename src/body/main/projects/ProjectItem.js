@@ -8,21 +8,26 @@ const ProjectItem = (props) => {
     const description = props.description && <p className="proj-description">{props.description}</p>;
     const bullets = props.bullets && <ul className="proj-bullets">{props.bullets.map((bullet, index) => <li key={index}>{bullet}</li>)}</ul>;
 
-    return (
-        <Tripartite leftWidth={2} centerWidth={12} rightWidth={2} className="proj-item">
-            <Image alt={`Icon for ${props.name}`} src={props.image} className='proj-image' />
-            <>
+    let rows = [
+        {
+            center: (<>
                 <Header as='h3' className='proj-title'>{props.name}</Header>
                 <p className='proj-tagline'>{props.tagline}</p>
                 <p className='proj-links right-substitute'>{generateLinks(props.links, props.name, true)}</p>
                 {description}
                 {bullets}
-            </>
-            <div>
-                {generateLinks(props.links, props.name)}
-            </div>
-        </Tripartite>
-    );
+            </>),
+            right: (<div>{generateLinks(props.links, props.name)}</div>)
+        }
+    ];
+
+    return (<Tripartite
+        className="proj-item"
+        left={<Image alt={`Icon for ${props.name}`} src={props.image} className='proj-image' />}
+        rows={rows}
+        centerWidth={12}
+        rightWidth={2}
+    />);
 };
 
 function generateLinks(links, name, mobile=false) {

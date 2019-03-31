@@ -11,9 +11,8 @@ const ExperienceItem = (props) => {
     const description = props.description && <p className="exp-description">{props.description}</p>;
     const bullets = props.bullets && <ul className="exp-bullets">{props.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}</ul>;
 
-    const titles = props.titles && props.titles.map((title, index) => (
-        <Tripartite className="exp-title" key={`${props.employer} ${title.name} ${index}`} leftWidth={2} centerWidth={10} rightWidth={4} alignRight={true} style={{width: '120%'}}>
-            <></>
+    let titles = props.titles ? props.titles.map((title) => {
+        let center = (
             <div>
                 <Header as='h4' className='title-name'>
                     {title.name}
@@ -25,29 +24,30 @@ const ExperienceItem = (props) => {
                 {title.description && <p>{title.description}</p>}
                 {title.bullets && <ul className="title-bullets">{title.bullets.map(bullet => <li key={bullet}>{bullet}</li>)}</ul>}
             </div>
-            {(title.startDate || title.endDate) ? <Duration startDate={title.startDate} endDate={title.endDate} /> : <></>}
-        </Tripartite>
-    ));
+        );
+
+        let right = (title.startDate || title.endDate) && <Duration startDate={title.startDate} endDate={title.endDate} />;
+
+        return {center, right};
+    }) : [];
+
+    let rows = [
+        {
+            center: (<>
+                <Header as='h3' className='employer-name'>{header}</Header>
+                <p className='exp-program'>
+                    {props.program}
+                    <span className="right-substitute exp-duration"> · {duration}</span>
+                </p>
+                {description}
+                {bullets}
+            </>),
+            right: (<p className="exp-duration">{duration}</p>)
+        }, ...titles
+    ];
 
     return (
-        <>
-            <Tripartite leftWidth={2} centerWidth={10} rightWidth={4}>
-                <Image src={props.logo} alt={`${props.employer} logo`} />
-                <>
-                    <Header as='h3' className='employer-name'>{header}</Header>
-                    <p className='exp-program'>
-                        {props.program}
-                        <span className="right-substitute exp-duration"> · {duration}</span>
-                    </p>
-                    {description}
-                    {bullets}
-                </>
-                <div style={{textAlign: 'right'}}>
-                    <p className="exp-duration">{duration}</p>
-                </div>
-            </Tripartite>
-            {titles}
-        </>
+        <Tripartite className="exp-item" left={<Image src={props.logo} alt={`${props.employer} logo`} />} alignRight={true} rows={rows} />
     );
 };
 

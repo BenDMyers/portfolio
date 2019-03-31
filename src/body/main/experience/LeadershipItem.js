@@ -11,25 +11,21 @@ const LeadershipItem = (props) => {
     const description = props.description && <p className="edu-description">{props.description}</p>;
     const bullets = props.bullets && <ul>{props.bullets.map((bullet, index) => <li key={`${props.school}${index}`} className="lead-bullets">{bullet}</li>)}</ul>;
 
-    return (
-        <>
-            <Tripartite leftWidth={2} centerWidth={10} rightWidth={4}>
-                <Image src={props.logo} alt={`${props.organization} logo`} />
-                <>
-                    <Header as='h3' className='lead-org'>{header}</Header>
-                    <p className='lead-role'>
-                        {props.role}
-                        <span className="edu-duration right-substitute"> · {duration}</span>
-                    </p>
-                    {description}
-                    {bullets}
-                </>
-                <div style={{textAlign: 'right'}}>
-                    <p className="edu-duration">{duration}</p>
-                </div>
-            </Tripartite>
-        </>
-    );
+    let rows = [
+        {
+            center: (<>
+                <Header as='h3' className='lead-org'>{header}</Header>
+                <p className='lead-role'>
+                    {props.role}
+                    <span className="edu-duration right-substitute"> · {duration}</span>
+                </p>
+                {description}
+                {bullets}
+            </>),
+            right: (<p className="edu-duration">{duration}</p>)
+        }
+    ];
+    return <Tripartite className="lead-item" left={<Image src={props.logo} alt={`${props.organization} logo`} />} rows={rows} alignRight={true} />;
 };
 
 LeadershipItem.propTypes = {

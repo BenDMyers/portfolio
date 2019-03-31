@@ -10,12 +10,11 @@ const PresentationItem = (props) => {
     const duration = props.date && <Duration endDate={props.date} />;
     const description = props.description && <p className="pres-description">{props.description}</p>;
     const bullets = props.bullets && <ul>{props.bullets.map((bullet, index) => <li key={index}>{bullet}</li>)}</ul>;
-    const player = props.videoUrl && <ResponsivePlayer url={props.videoUrl} />
+    const player = props.videoUrl && <ResponsivePlayer url={props.videoUrl} />;
 
-    return (
-        <Tripartite leftWidth={2} centerWidth={10} rightWidth={4} className="pres-item">
-            <Image src={props.logo} alt={`${props.organization} logo`} />
-            <>
+    let rows = [
+        {
+            center: (<>
                 <Header as='h3' className='pres-title'>{props.name}</Header>
                 <p className='pres-organization'>
                     {props.organization}
@@ -23,13 +22,15 @@ const PresentationItem = (props) => {
                 </p>
                 {description}
                 {bullets}
-                {player}
-            </>
-            <div style={{textAlign: 'right'}}>
-                {duration && <p className="pres-duration">{duration}</p>}
-            </div>
-        </Tripartite>
-    );
+            </>),
+            right: (duration && <p className="pres-duration">{duration}</p>)
+        },
+        {
+            center: player
+        }
+    ];
+
+    return <Tripartite className="pres-item" left={<Image src={props.logo} alt={`${props.organization} logo`} />} rows={rows} alignRight={true} />;
 };
 
 PresentationItem.propTypes = {
