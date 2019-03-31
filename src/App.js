@@ -1,14 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
 
 import BodyLayout from './body/BodyLayout';
 
-class App extends Component {
-    render() {
-        return (
-            <BodyLayout />
-        );
-    }
+const App = () => {
+    return (
+        <BodyLayout />
+    );
 }
 
 export default App;
