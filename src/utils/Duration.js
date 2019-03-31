@@ -32,7 +32,7 @@ const Duration = ({startDate, endDate, className}) => {
 
     return (<>
         <span className="screenreader">{screenreaderDuration}</span>
-        <span className={`duration ${className || ''}`}>{duration}</span>
+        <span aria-hidden="true" className={`duration ${className || ''}`}>{duration}</span>
     </>);
 };
 

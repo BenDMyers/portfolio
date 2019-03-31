@@ -14,8 +14,8 @@ const SocialItem = (props) => {
             <p className="social-link-content">
                 <Icon aria-hidden="true" name={icon} style={{color: iconColor}} />
                 <a href={url}>
-                    <span className="screenreader">{name} </span>
-                    {text}
+                    <span className="screenreader">{name} {text}</span>
+                    <span>{text}</span>
                 </a>
             </p>
         </Segment>

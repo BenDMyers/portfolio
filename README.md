@@ -11,7 +11,7 @@ Installation:
 ```bash
 git clone https://github.com/BenDMyers/portfolio.git
 cd portfolio
-npm install
+yarn install
 ```
 
 Usage:
