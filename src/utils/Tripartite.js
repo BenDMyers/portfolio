@@ -2,14 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Grid} from 'semantic-ui-react';
 
+/**
+ * A component for creating a responsive three-columned grid.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/utils/Tripartite.md}
+ */
 const Tripartite = ({alignRight, centerWidth, left, leftWidth, rightWidth, rows, ...rest}) => {
     let rightStyles = {paddingRight: 0};
     alignRight && (rightStyles.textAlign = 'right');
 
     let correctedCenterWidth = Math.round((17-leftWidth) * centerWidth/(centerWidth + rightWidth));
     let correctedRightWidth = Math.round((17-leftWidth) * rightWidth/(centerWidth + rightWidth));
-
-    console.log(correctedCenterWidth, correctedRightWidth)
 
     let innerRows = rows.map((row, index) => {
         return (

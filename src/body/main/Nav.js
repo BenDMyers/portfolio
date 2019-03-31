@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import {Link, withRouter} from 'react-router-dom';
 import {Menu} from 'semantic-ui-react';
 
+/**
+ * The portfolio navbar.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/body/main/Nav.md}
+ */
 const Nav = (props) => {
     const isActive = designatedRoute => designatedRoute === props.location.pathname;
 

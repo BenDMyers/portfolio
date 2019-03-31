@@ -4,6 +4,10 @@ import {Grid, Header} from 'semantic-ui-react';
 import workExperience from '../../../data/workExperienceData';
 import ExperienceItem from './ExperienceItem';
 
+/**
+ * A display of work experience credentials.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/body/main/experience/WorkExperience.md#WorkExperience}
+ */
 const WorkExperience = () => {
     const expCells = workExperience.map((exp, index) => <ExperienceItem {...exp} key={`exp${index}`} />);
 

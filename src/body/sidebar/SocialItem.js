@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Icon, Segment} from 'semantic-ui-react';
 
+/**
+ * A card representing a social media link.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/body/sidebar/SocialList.md#SocialItem}
+ */
 const SocialItem = (props) => {
     let {name, label, icon, iconColor, text, url} = props;
     return (

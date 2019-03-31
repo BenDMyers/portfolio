@@ -4,6 +4,10 @@ import ReactPlayer from 'react-player';
 
 import './responsivePlayer.styles.css';
 
+/**
+ * A responsive wrapper for a video player.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/utils/ResponsivePlayer.md}
+ */
 const ResponsivePlayer = (props) => {
     return (
         <div className="responsive-player-container">

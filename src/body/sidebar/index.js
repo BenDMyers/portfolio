@@ -6,6 +6,10 @@ import './sidebar.styles.css';
 import IntroPanel from './IntroPanel';
 import SocialList from './SocialList';
 
+/**
+ * A responsive component for displaying a sidebar and main content.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/body/sidebar/Sidebar.md}
+ */
 const Sidebar = (props) => {
     return (
         <Grid.Column width={props.width} role="complementary">

@@ -5,6 +5,10 @@ import './presentations.styles.css';
 import PresentationItem from './PresentationItem';
 import presentationData from '../../../data/presentationData';
 
+/**
+ * A display of presentations given. Contents of the portfolio's `/presentations` route.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/body/main/presentations/PresentationsContent.md#PresentationsContent}
+ */
 const PresentationsContent = () => {
     document.title = 'Presentations | Ben Myers'
     const presentations = presentationData.reduce((presList=[], presentation, index) => {

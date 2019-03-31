@@ -5,6 +5,10 @@ import {Header, Image} from 'semantic-ui-react';
 import Duration from '../../../utils/Duration';
 import Tripartite from '../../../utils/Tripartite';
 
+/**
+ * A tripartite representation of a single work experience.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/body/main/experience/WorkExperience.md#ExperienceItem}
+ */
 const ExperienceItem = (props) => {
     const header = props.employer + (props.location && `, ${props.location}`);
     const duration = <Duration startDate={props.startDate} endDate={props.endDate} />;

@@ -1,6 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+/**
+ * A component for generating accessible representations of time periods.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/utils/Duration.md}
+ */
 const Duration = ({startDate, endDate, className}) => {
     const screenreaderDateConfig = {month: 'long', year: 'numeric'};
     const dateConfig = {month: 'short', year: 'numeric'};

@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Grid, Icon} from 'semantic-ui-react';
 
+/**
+ * A display of a featured skill, with text and a prominent icon.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/body/main/experience/AskMeAbout.md#AskMeAboutTopic}
+ */
 const AskMeAboutTopic = (props) => {
     let icon;
 

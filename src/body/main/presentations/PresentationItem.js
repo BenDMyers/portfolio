@@ -6,6 +6,10 @@ import Duration from '../../../utils/Duration';
 import ResponsivePlayer from '../../../utils/ResponsivePlayer';
 import Tripartite from '../../../utils/Tripartite';
 
+/**
+ * A tripartite representation of a single presentation given.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/body/main/presentations/PresentationsContent.md#PresentationItem}
+ */
 const PresentationItem = (props) => {
     const duration = props.date && <Duration endDate={props.date} />;
     const description = props.description && <p className="pres-description">{props.description}</p>;

@@ -9,6 +9,10 @@ import ResumeContent from './experience/';
 import ProjectsContent from './projects/';
 import PresentationsContent from './presentations/';
 
+/**
+ * A routed component for displaying a navbar and the current page's contents.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/body/main/MainPanel.md}
+ */
 const MainPanel = (props) => {
     return (
         <Grid.Column width={props.width}>

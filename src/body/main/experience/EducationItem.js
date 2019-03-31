@@ -5,6 +5,10 @@ import {Header, Image} from 'semantic-ui-react';
 import Duration from '../../../utils/Duration';
 import Tripartite from '../../../utils/Tripartite';
 
+/**
+ * A tripartite representation of a single education experience.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/body/main/experience/Education.md#EducationItem}
+ */
 const EducationItem = (props) => {
     const header = props.school + (props.location && `, ${props.location}`);
     const duration = <Duration startDate={props.startDate} endDate={props.endDate} />;
@@ -48,7 +52,7 @@ const EducationItem = (props) => {
     ];
 
     return (
-        <Tripartite className="edu-item" left={<Image src={props.schoolLogo} alt={`${props.name} logo`} />} rows={rows} alignRight={true} />
+        <Tripartite className="edu-item" left={<Image src={props.schoolLogo} alt={`${props.name || props.school} logo`} />} rows={rows} alignRight={true} />
     )
 };
 

@@ -4,6 +4,10 @@ import {Header, Icon, Image} from 'semantic-ui-react';
 
 import Tripartite from '../../../utils/Tripartite';
 
+/**
+ * A display of projects. Contents of the portfolio's `/projects` route.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/body/main/projects/ProjectsContent.md#ProjectItem}
+ */
 const ProjectItem = (props) => {
     const description = props.description && <p className="proj-description">{props.description}</p>;
     const bullets = props.bullets && <ul className="proj-bullets">{props.bullets.map((bullet, index) => <li key={index}>{bullet}</li>)}</ul>;

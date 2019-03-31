@@ -1,6 +1,10 @@
 import React from 'react';
 import {Header, Image, Segment} from 'semantic-ui-react';
 
+/**
+ * A small informational panel about the portfolio's owner.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/body/sidebar/IntroPanel.md}
+ */
 const IntroPanel = () => {
     return (
         <Segment className="intro-panel">
