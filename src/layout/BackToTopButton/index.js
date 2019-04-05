@@ -3,6 +3,10 @@ import {Button} from 'semantic-ui-react';
 
 import './backToTopButton.styles.css';
 
+/**
+ * A hidden button that displays when focused and, when clicked, focuses the user on the navbar.
+ * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/layout/BackToTopButton.md}
+ */
 const BackToTopButton = () => {
     const [focused, setFocused] = useState(false);
 

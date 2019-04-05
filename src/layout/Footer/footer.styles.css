@@ -1,0 +1,12 @@
+.footer-panel {
+    margin-top: 3rem;
+}
+
+footer {
+    text-align: center;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

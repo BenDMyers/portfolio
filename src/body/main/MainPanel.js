@@ -8,6 +8,7 @@ import Nav from './Nav';
 import ResumeContent from './experience/';
 import ProjectsContent from './projects/';
 import PresentationsContent from './presentations/';
+import Footer from '../../layout/Footer';
 
 /**
  * A routed component for displaying a navbar and the current page's contents.
@@ -24,6 +25,7 @@ const MainPanel = (props) => {
                     <Route exact path="/presentations" component={PresentationsContent} />
                 </Switch>
             </Segment>
+                <Footer />
         </Grid.Column>
     );
 };
