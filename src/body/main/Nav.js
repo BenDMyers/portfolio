@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Link, withRouter} from 'react-router-dom';
+import {NavLink, withRouter} from 'react-router-dom';
 import {Menu} from 'semantic-ui-react';
 
 /**
@@ -8,13 +8,17 @@ import {Menu} from 'semantic-ui-react';
  * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/body/main/Nav.md}
  */
 const Nav = (props) => {
-    const isActive = designatedRoute => designatedRoute === props.location.pathname;
+    const navProps = {
+        as: NavLink,
+        exact: true,
+        'aria-current': 'page'
+    }
 
     return (
         <Menu role="navigation" pointing secondary>
-            <Menu.Item as={Link} active={isActive('/')} to="/" color="red">Experience</Menu.Item>
-            <Menu.Item as={Link} active={isActive('/projects')} to="/projects" color="purple">Projects</Menu.Item>
-            <Menu.Item as={Link} active={isActive('/presentations')} to="/presentations" color="blue">Presentations</Menu.Item>
+            <Menu.Item active={'/' === props.location.pathname} to="/" color="red" {...navProps}>Experience</Menu.Item>
+            <Menu.Item active={'/projects' === props.location.pathname} to="/projects" color="purple" {...navProps}>Projects</Menu.Item>
+            <Menu.Item active={'/presentations' === props.location.pathname} to="/presentations" color="blue" {...navProps}>Presentations</Menu.Item>
         </Menu>
     );
 };
