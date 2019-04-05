@@ -14,7 +14,7 @@ const PresentationsContent = () => {
     const presentations = presentationData.reduce((presList=[], presentation, index) => {
         presList.push(<PresentationItem key={presentation.name} {...presentation} />);
         if(index < presentationData.length - 1) {
-            presList.push(<hr />);
+            presList.push(<hr key={`hr ${index}`} />);
         }
         return presList;
     }, []);

@@ -28,7 +28,8 @@
 }
 
 .proj-links.right-substitute {
-    margin-top: 0;
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
 }
 
 .proj-links.right-substitute p.proj-link {
