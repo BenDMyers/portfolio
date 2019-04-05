@@ -9,7 +9,8 @@
 }
 
 .social-link-content {
-    font-size: 125%;
+    font-size: 115%;
+    font-weight: 600;
 }
 
 .social-link-content a:hover {

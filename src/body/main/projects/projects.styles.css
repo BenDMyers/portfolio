@@ -39,3 +39,12 @@
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
+
+.proj-link a {
+    font-size: 115%;
+    font-weight: 600;
+}
+
+.proj-link a:hover {
+    text-decoration: underline;
+}

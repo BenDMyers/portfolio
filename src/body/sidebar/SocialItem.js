@@ -15,7 +15,7 @@ const SocialItem = (props) => {
                 <Icon aria-hidden="true" name={icon} style={{color: iconColor}} />
                 <a href={url}>
                     <span className="screenreader">{name} {text}</span>
-                    <span>{text}</span>
+                    <span aria-hidden="true">{text}</span>
                 </a>
             </p>
         </Segment>

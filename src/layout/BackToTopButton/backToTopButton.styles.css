@@ -5,11 +5,10 @@
 }
 
 #backToTop:focus {
-    background-color: rgb(243, 20, 85);
+    background-color: rgb(28, 69, 183);
     color: white;
 }
 
 #backToTop:focus:hover {
-    background-color: rgba(223, 0, 65);
-    color: white;
+    background-color: rgb(8, 49, 163);
 }
