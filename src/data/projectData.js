@@ -14,6 +14,20 @@ const projectData = [
         image: './portfolio_logo.png'
     },
     {
+        name: 'What Should Ben Watch Next?',
+        tagline: 'Recommend movies I\'ve missed out on',
+        description: 'Search for, suggest, and vote on your favorite classic movies for me to watch, and see how I\'m doing.',
+        bullets: [
+            'Built with React. Powered by an Express API with a MongoDB database.',
+            'Leverages The Movie Database for real movie data and posters.'
+        ],
+        links: {
+            demo: 'https://bdm-watchlist-ui.herokuapp.com/',
+            repo: 'https://github.com/BenDMyers/Movie_List'
+        },
+        image: './watchlist.png'
+    },
+    {
         name: 'MoodTrackr',
         tagline: 'Hacklahoma 2018\'s Second Place winner',
         description: 'An application built in a team of four over 24 hours to gauge emotion over time through the user\'s webpage.',
