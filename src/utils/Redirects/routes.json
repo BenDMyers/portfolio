@@ -1,3 +1,5 @@
 {
+    "/comparators": "https://www.npmjs.com/package/generate-comparators",
+    "/dice": "https://bendmyers.github.io/DiceRoller/",
     "/movies": "https://bdm-watchlist-ui.herokuapp.com/"
 }
