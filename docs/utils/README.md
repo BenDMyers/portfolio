@@ -1,6 +1,6 @@
 # [`/src/utils/`](/src/utils/)
 
-A collection of reusable components that may not fit neatly into any one section of the page.
+A collection of reusable components and other utilities that may not fit neatly into any one section of the page.
 
 ## In this section...
 
@@ -9,3 +9,5 @@ A collection of reusable components that may not fit neatly into any one section
 * [`ResponsivePlayer`](/docs/utils/ResponsivePlayer.md)
 
 * [`Tripartite`](/docs/utils/Tripartite.md)
+
+* [`useFetch`](/docs/utils/use-fetch.md)
