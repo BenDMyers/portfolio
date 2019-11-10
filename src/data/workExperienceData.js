@@ -9,7 +9,7 @@ const workExperienceData = [
 		// description: 'classes in both foo and bar',
 		startDate: new Date(2018, JUNE),
 		bullets: [
-			'Developing and implementing React / Redux front-ends and Java back-ends for the redesign of the credit card, checking, and savings account summaries, which are critical pages for the bank that receive more than 60 million views a month.',
+			'Develops and implements React / Redux front-ends and Java back-ends for the redesign of the credit card, checking, and savings account summaries, which are critical pages for the bank that receive more than 60 million views a month.',
 			'Onboards college hires from across the company during 12-week web development bootcamps.',
 			"Champions web accessibility across USAA's products."
 		]
