@@ -28,3 +28,26 @@
 .computer.only .pres-duration {
     font-style: italic;
 }
+
+.pres-links.right-substitute {
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.pres-links.right-substitute p.pres-link {
+    display: inline;
+}
+
+.pres-links-bullet {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.pres-link a {
+    font-size: 115%;
+    font-weight: 600;
+}
+
+.pres-link a:hover {
+    text-decoration: underline;
+}
