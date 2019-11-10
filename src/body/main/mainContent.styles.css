@@ -1,26 +1,45 @@
 /* MAIN CONTENT */
 .ui.pointing.secondary.menu .item {
-    transition: color 0.2s, border-color 0.2s;
+	transition: color 0.2s, border-color 0.2s;
 }
-.ui.pointing.secondary.menu .red.active.item, .ui.pointing.secondary.menu .red.item:hover {
-    color: #f31455 !important;
-    border-color: #f31455 !important;
+.ui.pointing.secondary.menu .red.active.item,
+.ui.pointing.secondary.menu .red.item:hover {
+	color: #f31455 !important;
+	border-color: #f31455 !important;
 }
-.ui.pointing.secondary.menu .purple.active.item, .ui.pointing.secondary.menu .purple.item:hover {
-    color: #8334ff !important;
-    border-color: #8334ff !important;
+.ui.pointing.secondary.menu .purple.active.item,
+.ui.pointing.secondary.menu .purple.item:hover {
+	color: #8334ff !important;
+	border-color: #8334ff !important;
 }
-.ui.pointing.secondary.menu .blue.active.item, .ui.pointing.secondary.menu .blue.item:hover {
-    color: #1c45b7 !important;
-    border-color: #1c45b7 !important;
+.ui.pointing.secondary.menu .blue.active.item,
+.ui.pointing.secondary.menu .blue.item:hover {
+	color: #1c45b7 !important;
+	border-color: #1c45b7 !important;
+}
+
+.ui.pointing.secondary.menu .item:focus {
+	font-weight: bold;
+}
+
+.ui.pointing.secondary.menu .red.item:focus {
+	color: #f31455 !important;
+}
+
+.ui.pointing.secondary.menu .purple.item:focus {
+	color: #8334ff !important;
+}
+
+.ui.pointing.secondary.menu .blue.item:focus {
+	color: #1c45b7 !important;
 }
 
 .main-content-section {
-    margin-top: 5%;
-    margin-bottom: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
 .ui.grid .inner-rows {
-    padding-bottom: 0;
-    padding-top: 1rem;
+	padding-bottom: 0;
+	padding-top: 1rem;
 }
