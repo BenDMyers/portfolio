@@ -1,21 +1,20 @@
 [
-    {
-        "name": "Web Development",
-        "icon": "code",
-        "iconColor": "#f31455",
-        "text": "Web Development with ReactJS"
-    },
-    {
-        "name": "Accessibility",
-        "icon": "wheelchair",
-        "iconColor": "#8334ff",
-        "text": "Accessibility and Disability Advocacy"
-    },
-    {
-        "name": "Apache Kafka",
-        "icon": "comment alternate",
-        "cornerIcon": "server",
-        "iconColor": "#1c45b7",
-        "text": "Apache Kafka (I'm learning it now!)"
-    }
+	{
+		"name": "Web Development",
+		"icon": "code",
+		"iconColor": "#f31455",
+		"text": "Web Development with ReactJS"
+	},
+	{
+		"name": "Accessibility",
+		"icon": "wheelchair",
+		"iconColor": "#8334ff",
+		"text": "Accessibility and Disability Advocacy"
+	},
+	{
+		"name": "Code Education",
+		"icon": "rocket",
+		"iconColor": "#1c45b7",
+		"text": "Code Education and Mentorship"
+	}
 ]
