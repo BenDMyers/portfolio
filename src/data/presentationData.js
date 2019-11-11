@@ -1,4 +1,4 @@
-import {JANUARY, APRIL, OCTOBER, DECEMBER} from '../utils/Duration';
+import {JANUARY, APRIL, NOVEMBER, DECEMBER} from '../utils/Duration';
 
 const presentationData = [
 	{
@@ -10,7 +10,7 @@ const presentationData = [
 		links: {
 			slides: 'https://dallas.benmyers.dev'
 		},
-		date: new Date(2019, OCTOBER),
+		date: new Date(2019, NOVEMBER),
 		tags: ['dev', 'disability']
 	},
 	{
