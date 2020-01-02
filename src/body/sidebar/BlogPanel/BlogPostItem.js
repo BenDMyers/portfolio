@@ -8,7 +8,8 @@ import clickable from '../../../utils/clickable-a11y';
 const BlogPostItem = (props) => {
 	const srDateConfig = {day: 'numeric', month: 'long', year: 'numeric'};
 	const dateConfig = {day: 'numeric', month: 'short', year: 'numeric'};
-	const dateModified = new Date(props['date_modified']);
+    const dateModified = new Date(props['date_modified']);
+    dateModified.setDate(dateModified.getDate() + 1);
 	const postedDate = (
 		<>
 			<span className="screenreader">
