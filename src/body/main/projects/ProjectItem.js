@@ -9,7 +9,7 @@ import Tripartite from '../../../utils/Tripartite';
  * {@link https://github.com/BenDMyers/portfolio/tree/master/docs/body/main/projects/ProjectsContent.md#ProjectItem}
  */
 const ProjectItem = (props) => {
-    const description = props.description && <p className="proj-description">{props.description}</p>;
+    const description = props.description && <p className="proj-description" dangerouslySetInnerHTML={{__html: props.description}} />;
     const bullets = props.bullets && <ul className="proj-bullets">{props.bullets.map((bullet, index) => <li key={index}>{bullet}</li>)}</ul>;
 
     let rows = [

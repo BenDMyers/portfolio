@@ -12,7 +12,20 @@ const projectData = [
             repo: 'https://github.com/BenDMyers/portfolio'
         },
         image: './portfolio_logo.png'
-    },
+    }, {
+		name: 'Blog',
+		tagline: 'Empowering web developers to build a more accessible and inclusive web',
+		description: 'Popular posts include <a href="https://blog.benmyers.dev/clickable-divs/">How (Not) to Build a Button</a>, <a href="https://blog.benmyers.dev/accessibility-tree/">The Accessibility Tree</a>, and <a href="https://blog.benmyers.dev/css-can-influence-screenreaders/">CSS Can Influence Screenreaders</a>.',
+		bullets: [
+			'Leverages GatsbyJS for static site generation.',
+			'Posts have been shared by Deque Systems, the A11y Weekly and CSS Weekly newsletters, and more.'
+		],
+		links: {
+			demo: 'https://blog.benmyers.dev',
+			repo: 'https://github.com/BenDMyers/blog'
+		},
+		image: './portfolio_logo.png'
+	},
     {
         name: 'What Should Ben Watch Next?',
         tagline: 'Recommend movies I\'ve missed out on',

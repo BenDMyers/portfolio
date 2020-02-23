@@ -41,11 +41,18 @@
     padding-right: 0.5em;
 }
 
+.proj-description a {
+	font-weight: 600;
+}
+
 .proj-link a {
     font-size: 115%;
     font-weight: 600;
 }
 
+.proj-description a:hover,
 .proj-link a:hover {
     text-decoration: underline;
 }
+
+
